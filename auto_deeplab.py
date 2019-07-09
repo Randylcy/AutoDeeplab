@@ -144,7 +144,7 @@ class AutoDeeplab (nn.Module) :
                 self.cells += [cell3_3]
                 self.cells += [cell4_1]
                 self.cells += [cell4_2]
-        self.aspp_4 = nn.Sequential (    # def __init__(self, in_channels, out_channels, paddings, dilations):
+        self.aspp_4 = nn.Sequential (   
             ASPP (self._num_channel, 256, 24, 24)
         )
 
